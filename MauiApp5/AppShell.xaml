@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUIAPP5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUIAPP5.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Title="Tetris"
+        ContentTemplate="{DataTemplate local:TetrisPage}"
+        Icon="tetris.png"
+        Route="TetrisPage" />
+
+        <ShellContent
+        Title="Wordscapes"
+        ContentTemplate="{DataTemplate local:WordscapePage}"
+        Icon="wordscape.png"
+        Route="WordscapePage" />
+
+        <ShellContent
+        Title="Mobile Legends"
+        ContentTemplate="{DataTemplate local:MobilePage}"
+        Icon="mobilelegends.png"
+        Route="MobilePage" />
+
+    </FlyoutItem>
+
+</Shell>
